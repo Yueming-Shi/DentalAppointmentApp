@@ -1,4 +1,4 @@
-FROM node:16.8.0-slim
+FROM node:16.13.1-slim
 
 RUN mkdir -p /services/frontend
 

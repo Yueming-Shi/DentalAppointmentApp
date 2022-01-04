@@ -1,4 +1,4 @@
-FROM node:13.14-slim
+FROM node:16.13.1-slim
 
 RUN mkdir -p /services/backend
 
