@@ -39,10 +39,6 @@ export default () => {
           <MainNavigation />
           <main className="main-content">
             <Switch>
-              { // Healthcheck endpoint for k8s
-              <Route path="/health1">
-                <h3>Hey There!!! The App is Healthy</h3>
-              </Route>}
               {token && <Redirect from="/" to="/patients" exact />}
               {token && <Redirect from="/auth" to="/patients" exact />}
               {!token && (<Route path="/auth" component={AuthPage} />)}
